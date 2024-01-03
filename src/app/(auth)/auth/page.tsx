@@ -1,15 +1,9 @@
-import React from "react";
+import React from 'react';
 
-type pageProps = {};
-
-const Auth: React.FC<pageProps> = () => {
+export default function Auth(){
   return (
-    <main>
-      Auth Page
-      {/* Signin Modal */}
-      {/* Signup Modal */}
-      {/* ForgetPassword Modal */}
+    <main >
+     Auth Page
     </main>
   );
 };
-export default Auth;

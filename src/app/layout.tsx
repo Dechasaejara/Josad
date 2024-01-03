@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import Header from "@/components/layout/Headers/Header1";
 import "./globals.css";
 import Footer from "@/components/layout/Footers/Footer";
+import ThemeProvider from "@/components/layout/ThemeProvider/ThemeProvider";
 // import ThemeProvider from "@/components/ThemeProvider/ThemeProvider";
 // import { NextAuthProvider } from "@/components/AuthProvider/AuthProvider";
 // import Toast from "@/components/Toast/Toast";
@@ -36,14 +37,15 @@ export default function RootLayout({
       </head>
       <body className={poppins.className}>
         {/* <NextAuthProvider>
-          <ThemeProvider>
             <Toast /> */}
-        <main className="font-normal flex flex-col justify-between h-screen w-full py-1 px-4 ">
-          <Header />
-          <section className="">{children}</section>
-          <Footer />
-        </main>
-        {/* </ThemeProvider>
+        <ThemeProvider>
+          <main className="font-normal flex flex-col justify-between h-screen w-full ">
+            <Header />
+            <section className="py-1 px-4 h-screen">{children}</section>
+            <Footer />
+          </main>
+        </ThemeProvider>
+        {/* 
         </NextAuthProvider> */}
       </body>
     </html>

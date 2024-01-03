@@ -19,7 +19,10 @@ export default function Home() {
       {isLoading ? (
         <LoadingSpinner />
       ) : (
-        <div className="main">{/* <h1>Welcome to my website</h1> */}</div>
+        <div className="main">
+          {" "}
+          <h1>Welcome to my website</h1>
+        </div>
       )}
     </div>
   );

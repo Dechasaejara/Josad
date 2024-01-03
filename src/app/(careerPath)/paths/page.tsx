@@ -1,15 +1,9 @@
-import React from "react";
+import React from 'react';
 
-type pageProps = {};
-
-const Path: React.FC<pageProps> = () => {
+export default function Paths(){
   return (
-    // Path Layout
-    <main>
-      Path Page
-      {/* Description */}
-      {/* Collection of Paths */}
+    <main >
+     Paths Page
     </main>
   );
 };
-export default Path;
