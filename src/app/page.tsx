@@ -8,10 +8,11 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    setIsLoading(false);
     // Simulate an API call or any asynchronous operation
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 10);
+    // setTimeout(() => {
+    //   setIsLoading(false);
+    // }, 10);
   }, []);
 
   return (
