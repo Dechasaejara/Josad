@@ -16,11 +16,7 @@ model User {
   name    String? // nullable
   role    Role?    @default(USER)
   profile Profile? // 1 to 1 relation 
-<<<<<<< HEAD
-  jobs    Job[] // 1 to many relation
-=======
   // jobs    Job[] // 1 to many relation
->>>>>>> 81889a8a0faec7345a308a29e368fec05fbfba52
 
   // @@unique([name,email])
   @@map("users") // table name
@@ -36,27 +32,6 @@ model Profile {
 }
 
 model Job {
-<<<<<<< HEAD
-  id              Int           @id @default(autoincrement())
-  title           String
-  description     String
-  applyLink       String
-  company         String
-  source          String
-  inference       JobCategory[]
-  location        String
-  postedDate      DateTime      @default(now())
-  endDate         DateTime      @default(now())
-  isInHouse       Boolean       @default(false)
-  salary          Int
-  type            Type?         @default(On_Site_Full_Time)
-  country         String
-  experienceLevel Experience?   @default(Junior)
-  isNotReady      Boolean       @default(true)
-  authorId        Int
-  author          User          @relation(fields: [authorId], references: [id])
-  categoryId      Int?
-=======
   id            Int      @id @default(autoincrement())
   title         String
   description   String
@@ -80,7 +55,6 @@ model Job {
   userId        Int?
   // JobCategory   JobCategory? @relation(fields: [jobCategoryId], references: [id])
   jobCategoryId Int?
->>>>>>> 81889a8a0faec7345a308a29e368fec05fbfba52
 
   @@map("jobs")
 }
@@ -89,11 +63,8 @@ model JobCategory {
   id     Int    @id
   title  String
   parent Int?
-<<<<<<< HEAD
-  Job    Job[]
-=======
   // Job    Job[]
->>>>>>> 81889a8a0faec7345a308a29e368fec05fbfba52
+
 
   @@map("categories")
 }

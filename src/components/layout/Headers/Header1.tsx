@@ -23,7 +23,7 @@ const Header1 = () => {
   let avator;
   if (user) {
     avator = user.picture;
-    console.log(user);
+    // console.log(user);
   }
   const { darkTheme, setDarkTheme } = useContext(ThemeContext);
   const navLinks: NavLink[] = [
