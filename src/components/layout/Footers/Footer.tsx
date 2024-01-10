@@ -11,12 +11,12 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="mt-16 bg-slate-800 text-gray-300 p-10">
+    <footer className="relative bottom-0 mt-16 bg-slate-800 p-10 text-gray-300">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap gap-16 items-center justify-around">
-          <div className="flex md:text-left flex-col justify-between">
-            <h4 className="font-semibold text-[30px] py-6">Contact</h4>
-            <hr className="text-white mb-2 w-full" />
+        <div className="flex flex-wrap items-center justify-around gap-16">
+          <div className="flex flex-col justify-between md:text-left">
+            <h4 className="py-6 text-[30px] font-semibold">Contact</h4>
+            <hr className="mb-2 w-full text-white" />
             <div className="flex items-center py-4 ">
               <BsTelegram />
               <Link href={"/"} className="ml-2">
@@ -43,36 +43,36 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex md:text-left flex-col justify-between">
-            <h4 className="font-semibold text-[30px] py-6">About</h4>
-            <hr className="text-white mb-2 w-full" />
-            <Link href={"/story"} className="pb-4 scale-animation">
+          <div className="flex flex-col justify-between md:text-left">
+            <h4 className="py-6 text-[30px] font-semibold">About</h4>
+            <hr className="mb-2 w-full text-white" />
+            <Link href={"/story"} className="scale-animation pb-4">
               Our Story
             </Link>
-            <Link href={"/newsletter"} className="pb-4 scale-animation">
+            <Link href={"/newsletter"} className="scale-animation pb-4">
               Get in Touch
             </Link>
-            <Link href={"/privacy"} className="pb-4 scale-animation">
+            <Link href={"/privacy"} className="scale-animation pb-4">
               Our Privacy Commitment
             </Link>
-            <Link href={"/terms"} className="pb-4 scale-animation">
+            <Link href={"/terms"} className="scale-animation pb-4">
               Terms of service
             </Link>
           </div>
 
-          <div className="flex md:text-left flex-col justify-between">
-            <h4 className="font-semibold text-[30px] py-6">Services</h4>
-            <hr className="text-white mb-2 w-full" />
-            <Link href={"/certifications"} className="pb-4 scale-animation">
+          <div className="flex flex-col justify-between md:text-left">
+            <h4 className="py-6 text-[30px] font-semibold">Services</h4>
+            <hr className="mb-2 w-full text-white" />
+            <Link href={"/certifications"} className="scale-animation pb-4">
               Certification
             </Link>
-            <Link href={"/sheat-sheets"} className="pb-4 scale-animation">
+            <Link href={"/sheat-sheets"} className="scale-animation pb-4">
               Cheat Sheet
             </Link>
-            <Link href={"/excercies"} className="pb-4 scale-animation">
+            <Link href={"/excercies"} className="scale-animation pb-4">
               Excercies
             </Link>
-            <Link href={"/resume-builder"} className="pb-4 scale-animation">
+            <Link href={"/resume-builder"} className="scale-animation pb-4">
               Resume Builder
             </Link>
           </div>

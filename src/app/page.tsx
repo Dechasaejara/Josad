@@ -1,5 +1,6 @@
 "use client";
 import LoadingSpinner from "@/components/ui/Loading/Loading";
+import { Button } from "@/components/ui/button";
 import React, { useState, useEffect } from "react";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <div className="main">
           {" "}
           <h1>Welcome to my website</h1>
+          <Button variant="outline">Get Start</Button>
         </div>
       )}
     </div>

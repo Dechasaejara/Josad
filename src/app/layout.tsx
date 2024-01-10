@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 
 import Header from "@/components/layout/Headers/Header1";
-import "./globals.css";
+import "./global.css";
 import Footer from "@/components/layout/Footers/Footer";
 import ThemeProvider from "@/components/layout/ThemeProvider/ThemeProvider";
 // import ThemeProvider from "@/components/ThemeProvider/ThemeProvider";
@@ -39,9 +39,9 @@ export default function RootLayout({
         {/* <NextAuthProvider>
             <Toast /> */}
         <ThemeProvider>
-          <main className="font-normal flex flex-col justify-between h-screen w-full ">
+          <main className="flex min-h-screen flex-col font-normal">
             <Header />
-            <section className="py-1 px-4 h-screen">{children}</section>
+            <section className="flex-grow px-4 py-1">{children}</section>
             <Footer />
           </main>
         </ThemeProvider>
